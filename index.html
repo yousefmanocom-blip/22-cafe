@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>22 Cafe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container navbar">
+
+        <a href="#home" class="logo">
+            <span>22</span>
+            <small>CAFE</small>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+            <a href="#menu" data-ar="المنيو" data-en="Menu">المنيو</a>
+            <a href="#about" data-ar="عن الكافيه" data-en="About Us">عن الكافيه</a>
+            <a href="#contact" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="tool-button" id="languageToggle">EN</button>
+            <button class="tool-button" id="themeToggle">☾</button>
+
+            <button class="cart-button" id="openCart">
+                🛒
+                <b id="cartCount">0</b>
+            </button>
+
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+            <p class="eyebrow">WELCOME TO 22 CAFE</p>
+
+            <h1>
+                <span data-ar="مزاجك يبدأ من" data-en="Your Mood Starts at">
+                    مزاجك يبدأ من
+                </span>
+                <br>
+                <strong data-ar="كافيه 22" data-en="22 Cafe">كافيه 22</strong>
+            </h1>
+
+            <p
+                class="hero-text"
+                data-ar="مشروبات مميزة، أجواء راقية، وتجربة مختلفة في كل زيارة."
+                data-en="Special drinks, elegant vibes, and a different experience every visit.">
+                مشروبات مميزة، أجواء راقية، وتجربة مختلفة في كل زيارة.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary" data-ar="شوف المنيو" data-en="View Menu">
+                    شوف المنيو
+                </a>
+
+                <a href="#about" class="btn btn-outline" data-ar="اعرف أكتر" data-en="Learn More">
+                    اعرف أكتر
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container features-grid">
+
+            <div class="feature">
+                <div class="feature-icon">☕</div>
+                <div>
+                    <h3 data-ar="جودة مميزة" data-en="Premium Quality">جودة مميزة</h3>
+                    <p data-ar="أفضل المكونات والطعم المظبوط" data-en="The best ingredients and perfect taste">
+                        أفضل المكونات والطعم المظبوط
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <div>
+                    <h3 data-ar="تحضير سريع" data-en="Fast Preparation">تحضير سريع</h3>
+                    <p data-ar="طلبك جاهز في أسرع وقت" data-en="Your order is ready quickly">
+                        طلبك جاهز في أسرع وقت
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">♥</div>
+                <div>
+                    <h3 data-ar="حب في كل كوب" data-en="Made With Love">حب في كل كوب</h3>
+                    <p data-ar="بنجهز كل طلب باهتمام" data-en="Every order is carefully prepared">
+                        بنجهز كل طلب باهتمام
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="eyebrow">OUR MENU</p>
+
+                <h2 data-ar="اختار مشروبك المفضل" data-en="Choose Your Favorite">
+                    اختار مشروبك المفضل
+                </h2>
+
+                <p data-ar="كل اللي بتحبه موجود عندنا" data-en="Everything you love is here">
+                    كل اللي بتحبه موجود عندنا
+                </p>
+            </div>
+
+            <div class="menu-tools">
+
+                <div class="search-box">
+                    <span>⌕</span>
+                    <input
+                        type="text"
+                        id="searchInput"
+                        data-placeholder-ar="ابحث عن مشروب..."
+                        data-placeholder-en="Search for a drink..."
+                        placeholder="ابحث عن مشروب...">
+                </div>
+
+                <div class="categories">
+                    <button class="category active" data-category="all"
+                        data-ar="الكل" data-en="All">الكل</button>
+
+                    <button class="category" data-category="hot"
+                        data-ar="مشروبات ساخنة" data-en="Hot Drinks">مشروبات ساخنة</button>
+
+                    <button class="category" data-category="cold"
+                        data-ar="مشروبات باردة" data-en="Cold Drinks">مشروبات باردة</button>
+
+                    <button class="category" data-category="fresh"
+                        data-ar="فريش" data-en="Fresh">فريش</button>
+
+                    <button class="category" data-category="dessert"
+                        data-ar="حلويات" data-en="Desserts">حلويات</button>
+                </div>
+            </div>
+
+            <div class="products-grid" id="productsGrid"></div>
+
+            <div class="empty-state" id="emptyState">
+                لا توجد منتجات مطابقة للبحث.
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container about-grid">
+
+            <div class="about-image">
+                <div class="about-logo">22</div>
+            </div>
+
+            <div class="about-content">
+                <p class="eyebrow">ABOUT 22 CAFE</p>
+
+                <h2 data-ar="مكانك المفضل للقهوة والمزاج الرايق"
+                    data-en="Your Favorite Place for Coffee and Good Vibes">
+                    مكانك المفضل للقهوة والمزاج الرايق
+                </h2>
+
+                <p
+                    data-ar="في كافيه 22 بنؤمن إن القهوة مش مجرد مشروب، دي لحظة راحة ومزاج وتجربة تستحق تتكرر."
+                    data-en="At 22 Cafe, we believe coffee is more than a drink. It is a moment of comfort, mood, and an experience worth repeating.">
+                    في كافيه 22 بنؤمن إن القهوة مش مجرد مشروب، دي لحظة راحة ومزاج وتجربة تستحق تتكرر.
+                </p>
+
+                <p
+                    data-ar="بنقدم لك مجموعة متنوعة من المشروبات الساخنة والباردة والحلويات في أجواء مريحة وخدمة مميزة."
+                    data-en="We offer a wide variety of hot drinks, cold drinks, and desserts in a comfortable atmosphere with excellent service.">
+                    بنقدم لك مجموعة متنوعة من المشروبات الساخنة والباردة والحلويات في أجواء مريحة وخدمة مميزة.
+                </p>
+
+                <a href="#menu" class="btn btn-primary"
+                    data-ar="اطلب دلوقتي" data-en="Order Now">
+                    اطلب دلوقتي
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container contact-grid">
+
+            <div>
+                <p class="eyebrow">CONTACT US</p>
+
+                <h2 data-ar="مستنيين زيارتك" data-en="We Are Waiting for You">
+                    مستنيين زيارتك
+                </h2>
+
+                <p data-ar="للطلب أو الاستفسار تواصل معنا مباشرة على واتساب."
+                   data-en="For orders or inquiries, contact us directly on WhatsApp.">
+                    للطلب أو الاستفسار تواصل معنا مباشرة على واتساب.
+                </p>
+            </div>
+
+            <a class="whatsapp-button" href="https://wa.me/201100077797" target="_blank">
+                <span data-ar="واتساب" data-en="WhatsApp">واتساب</span>
+                <b>01100077797</b>
+            </a>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-content">
+
+        <div class="logo footer-logo">
+            <span>22</span>
+            <small>CAFE</small>
+        </div>
+
+        <p data-ar="© 2026 22 Cafe. جميع الحقوق محفوظة."
+           data-en="© 2026 22 Cafe. All rights reserved.">
+            © 2026 22 Cafe. جميع الحقوق محفوظة.
+        </p>
+
+        <div class="social-links">
+            <a href="https://wa.me/201100077797" target="_blank"
+               data-ar="واتساب" data-en="WhatsApp">واتساب</a>
+        </div>
+
+    </div>
+</footer>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<aside class="cart-sidebar" id="cartSidebar">
+
+    <div class="cart-header">
+        <h2 data-ar="طلبك" data-en="Your Order">طلبك</h2>
+        <button id="closeCart">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+        <div class="total-row">
+            <span data-ar="الإجمالي" data-en="Total">الإجمالي</span>
+            <strong><span id="cartTotal">0</span> <span data-ar="جنيه" data-en="EGP">جنيه</span></strong>
+        </div>
+
+        <button class="checkout-button" id="checkoutButton"
+            data-ar="إكمال الطلب" data-en="Complete Order">
+            إكمال الطلب
+        </button>
+    </div>
+</aside>
+
+<div class="modal-overlay" id="orderModal">
+    <div class="order-modal">
+
+        <button class="modal-close" id="closeModal">×</button>
+
+        <div class="modal-heading">
+            <p class="eyebrow">ORDER DETAILS</p>
+
+            <h2 data-ar="بيانات الطلب" data-en="Order Details">
+                بيانات الطلب
+            </h2>
+
+            <p data-ar="اكتب بياناتك لإرسال الأوردر على واتساب"
+               data-en="Enter your details to send the order on WhatsApp">
+                اكتب بياناتك لإرسال الأوردر على واتساب
+            </p>
+        </div>
+
+        <form id="orderForm">
+
+            <label>
+                <span data-ar="الاسم" data-en="Name">الاسم</span>
+                <input
+                    type="text"
+                    id="customerName"
+                    required
+                    data-placeholder-ar="اكتب اسمك"
+                    data-placeholder-en="Enter your name"
+                    placeholder="اكتب اسمك">
+            </label>
+
+            <label>
+                <span data-ar="رقم الهاتف" data-en="Phone Number">رقم الهاتف</span>
+                <input
+                    type="tel"
+                    id="customerPhone"
+                    required
+                    placeholder="01xxxxxxxxx">
+            </label>
+
+            <label>
+                <span data-ar="نوع الطلب" data-en="Order Type">نوع الطلب</span>
+
+                <select id="orderType">
+                    <option value="pickup"
+                        data-ar="استلام من الكافيه"
+                        data-en="Pickup from Cafe">
+                        استلام من الكافيه
+                    </option>
+
+                    <option value="delivery"
+                        data-ar="توصيل"
+                        data-en="Delivery">
+                        توصيل
+                    </option>
+                </select>
+            </label>
+
+            <label id="addressField" class="hidden">
+                <span data-ar="العنوان" data-en="Address">العنوان</span>
+
+                <textarea
+                    id="customerAddress"
+                    rows="3"
+                    data-placeholder-ar="اكتب عنوان التوصيل بالتفصيل"
+                    data-placeholder-en="Enter your complete delivery address"
+                    placeholder="اكتب عنوان التوصيل بالتفصيل"></textarea>
+            </label>
+
+            <label>
+                <span data-ar="ملاحظات إضافية" data-en="Additional Notes">
+                    ملاحظات إضافية
+                </span>
+
+                <textarea
+                    id="customerNotes"
+                    rows="3"
+                    data-placeholder-ar="أي ملاحظات على الطلب؟"
+                    data-placeholder-en="Any notes about your order?"
+                    placeholder="أي ملاحظات على الطلب؟"></textarea>
+            </label>
+
+            <button type="submit" class="submit-order"
+                data-ar="إرسال الطلب على واتساب"
+                data-en="Send Order on WhatsApp">
+                إرسال الطلب على واتساب
+            </button>
+
+        </form>
+    </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
